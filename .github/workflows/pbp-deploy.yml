@@ -5,10 +5,11 @@ on:
     branches:
       - main
       - master
+      - development2
 
 jobs:
   Deployment:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/development2'
     runs-on: ubuntu-latest
     steps:
     - name: Cloning repo
